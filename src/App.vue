@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        <head-nav></head-nav>
+        <component :is='currentView' keep-alive></component>
         <div id="content">
             <router-view></router-view>
         </div>    
@@ -8,16 +8,29 @@
     </div>
 </template>
 <script>
-    import {HeadNav,FootNav} from '@/components/Common/';
+    import {HeadNav,FootNav,HeadNav2} from '@/components/Common/';
     export default {
         name: 'app',
         components:{
             HeadNav,
-            FootNav
+            FootNav,
+            HeadNav2
+        },
+        data(){
+            return {
+                currentView:'HeadNav'
+            }
         },
         watch:{
             $route(to,from){
-                // console.log(to.name);
+                console.log(to.path);
+                switch(to.path){
+                    case '/view':
+                        this.currentView='HeadNav2';
+                    break;
+                    default:
+                    this.currentView='HeadNav';
+                }
                 this.$store.dispatch('update_title',to.name);
             }
         }
