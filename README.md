@@ -16,20 +16,8 @@
 - 动态切换组件
 
 
+## 演示
 
-
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
+### GitHub：[https://sailengsi.github.io/sls-vue2-all-demo/dist/](https://sailengsi.github.io/sls-vue2-all-demo/dist/)
+### Gitee：[https://sailengsi.gitee.io/sls-vue2-all-demo/dist/](https://sailengsi.gitee.io/sls-vue2-all-demo/dist/)
+### Coding：[https://sailengsi.coding.me/sls-vue2-all-demo/dist/](https://sailengsi.coding.me/sls-vue2-all-demo/dist/)
